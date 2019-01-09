@@ -336,37 +336,47 @@ body, button, input, textarea, select, option, pre, optgroup {
 
 .m-ui-tiger {
     position: relative;
-    width: 640px;
-    height: 432px;
-    margin: 20px auto;
-    background: url("../images/tiger_bg.png") no-repeat
+    width: 800px;
+    height: 540px;
+    margin: 50px auto;
+    z-index: 9999;
+    background: url("../images/tiger_bg3.png") no-repeat
+}
+
+.tips{
+    position: absolute;
+    top: 370px;
+    left: 250px;
+    font-size: 50px;
+    font-family: "Arial Unicode MS";
 }
 
 .m-ui-tiger .toggle {
     position: absolute;
-    top: 306px;
+    top: 706px;
     left: 119px;
     display: block;
     width: 404px;
-    height: 50px
+    height: 50px;
+    background: url("../images/tiger_bg.png") no-repeat
 }
 
 .m-ui-tiger .item {
     position: absolute;
-    top: 77px;
-    left: 139px;
+    top: 100px;
+    left: 189px;
     display: block;
-    width: 110px;
-    height: 135px;
+    width: 125px;
+    height: 160px;
     overflow: hidden
 }
 
 .m-ui-tiger .item:nth-child(2) {
-    left: 265px
+    left: 345px
 }
 
 .m-ui-tiger .item:nth-child(3) {
-    left: 391px
+    left: 500px
 }
 
 .m-ui-tiger .roller {

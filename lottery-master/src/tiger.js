@@ -55,7 +55,7 @@ class LotteryTiger extends Events {
 
     this.options = Object.assign({
       interval: 300, // 每个roller间动画间隔
-      aniMinTime: 6000, // 动画执行最少时间
+      aniMinTime: 4000, // 动画执行最少时间
       resize: true // roller大小是否是可变的
     }, options)
     this.toggle = toggle

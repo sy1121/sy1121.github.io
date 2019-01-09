@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="screen-orientation" content="portrait">
+  <title>老虎机</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="m-ui-tiger">
+  <div class="item">
+    <ul class="roller">
+      <li>
+        <img src="./images/2.png" alt=""/>
+      </li>
+      <li>
+        <img src="./images/3.png" alt=""/>
+      </li>
+      <li>
+        <img src="./images/4.png" alt=""/>
+      </li>
+    </ul>
+  </div>
+  <div class="item">
+    <ul class="roller">
+        <li>
+            <img src="./images/2.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/3.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/4.png" alt=""/>
+        </li>
+    </ul>
+  </div>
+  <div class="item">
+    <ul class="roller">
+        <li>
+            <img src="./images/2.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/3.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/4.png" alt=""/>
+        </li>
+    </ul>
+  </div>
+ <a id="js_toggle" class="toggle" href="javascript:;" onclick="lottery.draw()"></a>
+  <p class ="tips" id="tips">开始摇奖啦...</p>
+</div>
+</body>
+<script src="../dist/tiger.js"></script>
+<script>
+  var lottery = new LotteryTiger(document.getElementById('js_toggle'), document.querySelectorAll('.roller')) // eslint-disable-line
+  lottery.on('start', function () {
+    setTimeout(function () {
+        var result1 = 1;
+        var result2 = 1;
+        var result3 = 1;
+        while(result1==result2&&result2==result3){
+            result1 =  Math.round(Math.random() * 2)
+            result2 =  Math.round(Math.random() * 2)
+            result3 =  Math.round(Math.random() * 2)
+        }
+
+      var ret = [result1, result2,result3]
+      lottery.setResult(ret)
+//            lottery.reset();
+    }, 1000)
+      var obj = document.getElementById("tips");
+      obj.innerHTML= "---转转转---";
+  })
+  lottery.on('end', function () {
+      var obj = document.getElementById("tips");
+      obj.innerHTML= "很遗憾没有中奖！";
+  })
+  setTimeout(function(){
+    lottery.draw();
+  },300);
+</script>
+</html>
