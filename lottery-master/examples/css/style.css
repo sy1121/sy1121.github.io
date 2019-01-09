@@ -348,7 +348,7 @@ body, button, input, textarea, select, option, pre, optgroup {
     top: 370px;
     left: 250px;
     font-size: 50px;
-    font-family: "Arial Unicode MS";
+    font-family: 华文行楷;
 }
 
 .m-ui-tiger .toggle {
@@ -385,7 +385,7 @@ body, button, input, textarea, select, option, pre, optgroup {
 
 .m-ui-tiger .roller li {
     width: 110px;
-    height: 135px;
+    height: 155px;
     overflow: hidden
 }
 

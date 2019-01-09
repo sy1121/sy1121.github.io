@@ -23,7 +23,7 @@
     }
 
     .canvas_ha_right{
-        left: 900px;
+        left: 750px;
         width:100%;
         height:100%;
         overflow:hidden;
@@ -131,6 +131,9 @@
 <div class="m-ui-tiger">
   <div class="item">
     <ul class="roller">
+        <li>
+            <img src="./images/1.png" alt=""/>
+        </li>
       <li>
         <img src="./images/2.png" alt=""/>
       </li>
@@ -140,10 +143,28 @@
       <li>
         <img src="./images/4.png" alt=""/>
       </li>
+        <li>
+            <img src="./images/5.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/6.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/7.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/8.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/9.png" alt=""/>
+        </li>
     </ul>
   </div>
   <div class="item">
     <ul class="roller">
+        <li>
+            <img src="./images/1.png" alt=""/>
+        </li>
         <li>
             <img src="./images/2.png" alt=""/>
         </li>
@@ -153,10 +174,28 @@
         <li>
             <img src="./images/4.png" alt=""/>
         </li>
+        <li>
+            <img src="./images/5.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/6.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/7.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/8.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/9.png" alt=""/>
+        </li>
     </ul>
   </div>
   <div class="item">
     <ul class="roller">
+        <li>
+            <img src="./images/1.png" alt=""/>
+        </li>
         <li>
             <img src="./images/2.png" alt=""/>
         </li>
@@ -165,6 +204,21 @@
         </li>
         <li>
             <img src="./images/4.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/5.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/6.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/7.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/8.png" alt=""/>
+        </li>
+        <li>
+            <img src="./images/9.png" alt=""/>
         </li>
     </ul>
   </div>
@@ -177,7 +231,7 @@
   var lottery = new LotteryTiger(document.getElementById('js_toggle'), document.querySelectorAll('.roller')) // eslint-disable-line
   lottery.on('start', function () {
     setTimeout(function () {
-        result =  Math.round(Math.random() * 2)
+        result =  Math.round(Math.random() * 8)
       var ret = [result, result,result]
       lottery.setResult(ret)
 //            lottery.reset();
